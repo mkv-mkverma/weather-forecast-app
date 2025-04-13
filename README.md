@@ -21,10 +21,7 @@ Given that I am looking at a weather prediction When I look at each prediction T
 Given that I have chosen a different city When I look at the page Then I see the weather for the newly chosen city only
 
 <br/>
-ng g c features/weather/pages/weather-page
-ng g c layouts/main-layout
-ng g c shared/components/header
-ng g c shared/components/page-not-found
-ng g c features/weather/components/city-selector
-ng g s features/weather/services/weather
-ng g c features/weather/components/forecast-card
+
+## ng serve
+
+- http://localhost:4200/weather
