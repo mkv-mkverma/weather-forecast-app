@@ -1,0 +1,9 @@
+<label for="city">Select a city:</label>
+<select id="city" (change)="selectCity($event)">
+  <option value="">Choose city</option>
+  @for(city of cities; track city){
+  <option [value]="city">{{ city }}</option>
+  } @empty {
+  <option disabled>No cities available</option>
+  }
+</select>

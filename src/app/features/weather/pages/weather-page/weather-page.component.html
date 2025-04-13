@@ -1,0 +1,8 @@
+<app-city-selector (selectedCity)="onChangeCity($event)"></app-city-selector>
+@if(forecastData().length){
+<h3>5-day forecast</h3>
+@for(item of forecastData(); track item.date){
+<app-forecast-card [data]="item"></app-forecast-card>
+} } @else{
+<h2 class="no-weather">No Weather Forcasts</h2>
+}

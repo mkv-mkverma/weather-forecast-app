@@ -1,0 +1,20 @@
+<details>
+  <summary class="forecast-summary">
+    <span>
+      {{ data.date | date : "EEE, MMM d" }}
+    </span>
+    <span> {{ data.temp }}°C </span>
+  </summary>
+  <div class="forecast-card">
+    <div class="forecast-card__details">
+      <p>Temperature: {{ data.temp }}°C</p>
+      <p>Wind Speed: {{ data.wind }} m/s</p>
+      <p>Description: {{ data.description | titlecase }}</p>
+    </div>
+    <img
+      [src]="getIconUrl(data.icon)"
+      [alt]="data.description"
+      [title]="data.description"
+    />
+  </div>
+</details>

@@ -1,0 +1,24 @@
+.forecast-summary {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.forecast-summary:hover {
+  background-color: rgba(72, 72, 74, 0.05);
+}
+.forecast-summary span {
+  padding: 10px;
+}
+.forecast-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+}
+.forecast-details h3 {
+  margin: 0 0 0.2rem;
+}
+.forecast-details p {
+  margin: 0.1rem 0;
+}
