@@ -22,6 +22,14 @@ Given that I have chosen a different city When I look at the page Then I see the
 
 <br/>
 
-## ng serve
+## How To Run project
+
+# 1. Install dependencies
+
+npm install
+
+# 2. Run the dev server
+
+npm run start
 
 - http://localhost:4200/weather
